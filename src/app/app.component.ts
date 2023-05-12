@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from './shared/auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +6,5 @@ import { AuthService } from './shared/auth.service';
 })
 export class AppComponent {
   title = 'bikeA';
-
-  constructor(private _authService: AuthService){
-
   }
-}
+

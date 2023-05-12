@@ -18,6 +18,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { ContactpageComponent } from './contactpage/contactpage.component';
     ReactiveFormsModule,
     SlickCarouselModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
