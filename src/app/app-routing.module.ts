@@ -9,19 +9,19 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { ExplorerComponent } from './explorer/explorer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
-import { AuthGuard } from './shared/auth.guard';
+
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent,canActivate:[AuthGuard]},
-  {path:"product", component:ProductComponent,canActivate:[AuthGuard]},
-  {path:"product/:check", component:ExplorerComponent,canActivate:[AuthGuard]},
-  {path:"login",component:LoginComponent,canActivate:[AuthGuard]},
-  {path:"forgetpassword",component:ForgetpasswordComponent,canActivate:[AuthGuard]},
-  {path:"Appearal",component:AppearalComponent,canActivate:[AuthGuard]},
-  {path:"Accessories",component:AccessoriesComponent,canActivate:[AuthGuard]},
-  {path:"Explorer",component:ExplorerComponent,canActivate:[AuthGuard]},
+  {path:"home",component:HomeComponent},
+  {path:"product", component:ProductComponent},
+  {path:"product/:check", component:ExplorerComponent},
+  {path:"login",component:LoginComponent},
+  {path:"forgetpassword",component:ForgetpasswordComponent},
+  {path:"Appearal",component:AppearalComponent},
+  {path:"Accessories",component:AccessoriesComponent},
+  {path:"Explorer",component:ExplorerComponent},
   {path:"Register",component:RegistrationComponent},
-  {path:"Contact",component:ContactpageComponent,canActivate:[AuthGuard]}
+  {path:"Contact",component:ContactpageComponent}
 ];
 
 @NgModule({

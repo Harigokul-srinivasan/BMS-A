@@ -20,7 +20,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
