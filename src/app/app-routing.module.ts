@@ -9,9 +9,10 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { ExplorerComponent } from './explorer/explorer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
+import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+  {path:"home",component:HomeComponent,canActivate:[AuthGuard]},
   {path:"product", component:ProductComponent},
   {path:"product/:check", component:ExplorerComponent},
   {path:"login",component:LoginComponent},
