@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 
 @Injectable({
@@ -14,8 +13,8 @@ export class AuthGuard implements CanActivate {
     if(this.auth.IsLoggedIn()){
       return true;
     }
-    alert("You have Not logged In")
-    this.router.navigate(['home']);
+    alert("You have Not logged In");
+    this.router.navigate(['login']);
     return false;
   }
 
