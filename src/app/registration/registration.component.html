@@ -11,8 +11,8 @@
                         <p class="error" *ngIf="RegisterForms.controls['firstname'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>User Name contain only alphabets</p>
         </div>
       <div class="Registerusername">
-        <i class="fa fa-user-o" aria-hidden="true"> </i
-        ><input type="text" placeholder="Phoneno" formControlName="Phoneno" name="Phoneno" id="Phoneno" maxlength="10" minlength="10" /></div>
+        <i class="fa fa-phone" aria-hidden="true"></i
+          ><input type="text" placeholder="Phoneno" formControlName="Phoneno" name="Phoneno" id="Phoneno" maxlength="10" minlength="10" /></div>
         <div class="errorContainer" *ngIf="RegisterForms.controls['Phoneno'].dirty">
                         <p class="error" *ngIf="RegisterForms.controls['Phoneno'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Phone number can't be blank</p>
                         <p class="error" *ngIf="RegisterForms.controls['Phoneno'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid Phoneno</p>

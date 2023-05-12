@@ -10,6 +10,7 @@
     background: #fff;
     border-color: #000000;
     box-shadow: 1px 1px 1px 1px #666;
+    position: relative;
   }
   .logo {
     width: 65px;
@@ -105,3 +106,21 @@
   .login a:hover {
     text-decoration: underline;
   }
+ .alert{
+  position: relative;
+ font-size: 12px;
+ color: red;
+ padding-left: 1.5%;
+ font-family: 'Times New Roman', Times, serif;
+ margin-top: 5px;
+ }
+ button{
+  padding: 5%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: orangered;
+  border-bottom: 2px solid orangered;
+  font-weight: bold;
+  color: white;
+ }
