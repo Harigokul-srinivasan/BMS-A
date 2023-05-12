@@ -123,4 +123,6 @@
   border-bottom: 2px solid orangered;
   font-weight: bold;
   color: white;
+  width: 100%;
+  margin-left: 2px;
  }
