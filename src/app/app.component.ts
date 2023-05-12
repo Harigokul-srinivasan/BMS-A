@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'bikeA';
 
   constructor(private _authService: AuthService){
-    
+
   }
 }
