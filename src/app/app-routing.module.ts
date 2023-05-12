@@ -9,12 +9,19 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { ExplorerComponent } from './explorer/explorer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
+import { AuthGuard } from './auth.guard';
+import { UserGuard } from './guards/user.guard';
 
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+  {path:"home",component:HomeComponent
+},
   {path:"product", component:ProductComponent},
-  {path:"product/:check", component:ExplorerComponent},
+  {path:"product/:check", component:ExplorerComponent,
+   canActivate:[AuthGuard], canActivateChild: [UserGuard],
+  //  children:[
+  //   { path: 'button',}]
+},
   {path:"login",component:LoginComponent},
   {path:"forgetpassword",component:ForgetpasswordComponent},
   {path:"Appearal",component:AppearalComponent},

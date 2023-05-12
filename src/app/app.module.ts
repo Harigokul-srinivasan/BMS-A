@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
+import { UserGuard } from './guards/user.guard';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { AuthGuard } from './auth.guard';
     ReactiveFormsModule,
     SlickCarouselModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard , UserGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

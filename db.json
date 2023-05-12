@@ -32,6 +32,14 @@
       "password": "Arun@123",
       "confirm": "Arun@123",
       "id": 2
+    },
+    {
+      "firstname": "PadmavathiS",
+      "Phoneno": "8667200676",
+      "email": "padmavathi348@gmail.com",
+      "password": "Padma@123",
+      "confirm": "Padma@123",
+      "id": 3
     }
   ],
   "product": [
