@@ -13,15 +13,15 @@ import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent,canActivate:[AuthGuard]},
-  {path:"product", component:ProductComponent},
-  {path:"product/:check", component:ExplorerComponent},
-  {path:"login",component:LoginComponent},
-  {path:"forgetpassword",component:ForgetpasswordComponent},
-  {path:"Appearal",component:AppearalComponent},
-  {path:"Accessories",component:AccessoriesComponent},
-  {path:"Explorer",component:ExplorerComponent},
+  {path:"product", component:ProductComponent,canActivate:[AuthGuard]},
+  {path:"product/:check", component:ExplorerComponent,canActivate:[AuthGuard]},
+  {path:"login",component:LoginComponent,canActivate:[AuthGuard]},
+  {path:"forgetpassword",component:ForgetpasswordComponent,canActivate:[AuthGuard]},
+  {path:"Appearal",component:AppearalComponent,canActivate:[AuthGuard]},
+  {path:"Accessories",component:AccessoriesComponent,canActivate:[AuthGuard]},
+  {path:"Explorer",component:ExplorerComponent,canActivate:[AuthGuard]},
   {path:"Register",component:RegistrationComponent},
-  {path:"Contact",component:ContactpageComponent}
+  {path:"Contact",component:ContactpageComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({
