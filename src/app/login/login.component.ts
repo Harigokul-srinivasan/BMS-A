@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       if (user) {
         alert('login sucessful');
         this.LoginForm.reset();
-        this.route.navigate(['product']);
+        this.route.navigate(['home']);
       }
       this.error = false;
     });
