@@ -4,15 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1000px;
+  width: 1500px;
 }
 
 .shipping-address {
   margin: 8rem auto;
   padding: 40px 50px;
-  width: 75%;
+  width: 65%;
   border-radius: 5px;
-  background: #fff;
+  background:  #f74e05;;
   border-color: #000000;
   box-shadow: 1px 1px 1px 1px #666;
   position: relative;
