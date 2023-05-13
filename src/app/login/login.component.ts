@@ -53,23 +53,7 @@ export class LoginComponent implements OnInit {
       this.error = false;
     });
   }
-  // admin() {
-  //   this.http.get<any>('http://localhost:3000/admin').subscribe((admin) => {
-  //     const user = admin.find(
-  //       (u: any) =>
-  //         u.firstname === this.LoginForm.value.emailvalue &&
-  //         u.password === this.LoginForm.value.passwordvalue
-  //     );
-
-  //     if (user) {
-  //       alert('login sucessful');
-  //       this.LoginForm.reset();
-  //       this.route.navigate(['/home']);
-  //     } else {
-  //       this.error = true;
-  //     }
-  //   });
-  // }
+ 
 
   ngOnInit(): void {}
 }

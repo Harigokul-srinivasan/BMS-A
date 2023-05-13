@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { AuthService } from './auth.service';
+import { AuthService } from './auth.service';
 
 
 @Component({
@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bikeA';
 
-  // constructor(private _authService: AuthService){}
+  constructor(private _authService: AuthService){}
   }
 

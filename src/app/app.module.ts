@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { LoginComponent } from './login/login.component';
-
+import { Router } from '@angular/router';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { AppearalComponent } from './appearal/appearal.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
