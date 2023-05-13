@@ -12,6 +12,8 @@ import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+
 
 
 const routes: Routes = [
@@ -30,7 +32,8 @@ const routes: Routes = [
   {path:"Explorer",component:ExplorerComponent},
   {path:"Register",component:RegistrationComponent},
   {path:"Contact",component:ContactpageComponent ,},
-  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard]}
+  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard]},
+  {path:"paymentpage",component:PaymentpageComponent},
   //
 
 ];

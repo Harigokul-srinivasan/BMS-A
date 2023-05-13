@@ -21,6 +21,7 @@ import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
       ImagesliderComponent,
       RegistrationComponent,
       ContactpageComponent,
-      CheckoutComponent
+      CheckoutComponent,
+      PaymentpageComponent
    ],
   imports: [
     BrowserModule,

@@ -42,6 +42,14 @@
 .cart-details {
   width: 25%;
   background-color: #c0c0c0;
+  max-height: 500px;
+  border-radius: 10px;
+  margin: 8rem auto;
+  padding: 40px 50px;
+}
+.cart-details h2{
+  align-items: center;
+  text-align: center;
 }
 
 .product-details {
@@ -60,7 +68,7 @@
   height: 180px;
   overflow: hidden;
   margin-bottom: 90%;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .product-image img {
@@ -71,16 +79,20 @@
 
 .product-name {
   position: absolute;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 
 .product-name h3 {
-  font-size: 13px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
 }
+.product-price{
+  position: absolute;
+  margin-left: 160px;
+}
 .product-price h4{
-  font-size: 10px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
@@ -96,4 +108,5 @@ button
   color: white;
   width: 100%;
   margin-left: 2px;
+  font-size: 20px;
 }
