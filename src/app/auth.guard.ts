@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
-  constructor(private authService: AuthService){
+  constructor(private authService: AuthService, private route: Router){
 
   }
   canActivate(){
@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
       return true;
     }else{
       window.alert('permisssion denied with-out Login');
-      
+      this.route.navigate(['login'])
       return false;
     }
   }
