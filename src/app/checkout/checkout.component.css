@@ -41,6 +41,7 @@
 
 .cart-details {
   width: 25%;
+  background-color: #c0c0c0;
 }
 
 .product-details {
@@ -58,6 +59,8 @@
   width: 200px;
   height: 180px;
   overflow: hidden;
+  margin-bottom: 90%;
+  margin-left: 50px;
 }
 
 .product-image img {
@@ -67,6 +70,7 @@
 }
 
 .product-name {
+  position: absolute;
   margin-left: 10px;
 }
 
