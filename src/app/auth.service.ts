@@ -6,7 +6,8 @@ import { LoginComponent } from './login/login.component';
   providedIn: 'root'
 })
 export class AuthService {
-
+  userlogin=false;
+  isUserLogIn=Boolean(sessionStorage.getItem("usersuccess"));
   constructor() {}
     get isUserLoggedIn(){
 
@@ -19,13 +20,13 @@ export class AuthService {
      isLoggedIn = false;
 
   login() {
-    if(LoginComponent)
     this.isLoggedIn = true;
+    this.isUserLogIn= Boolean(sessionStorage.getItem("usersuccess"));
   }
 
   logout() {
-    if(LoginComponent)
     this.isLoggedIn = false;
+    this.isUserLogIn= Boolean(sessionStorage.getItem("usersuccess"));
   }
 }
 

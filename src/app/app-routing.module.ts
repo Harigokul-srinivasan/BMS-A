@@ -30,7 +30,7 @@ const routes: Routes = [
   {path:"Explorer",component:ExplorerComponent},
   {path:"Register",component:RegistrationComponent},
   {path:"Contact",component:ContactpageComponent ,},
-  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard], canActivateChild: [UserGuard],}
+  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard]}
   //
 
 ];

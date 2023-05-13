@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,10 +12,12 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  usersuccess=false;
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,
-    private route: Router
+    private route: Router,
+    private authService: AuthService
   ) {}
   LoginForm = this.fb.group({
     username: [, Validators.required],
@@ -48,12 +51,15 @@ export class LoginComponent implements OnInit {
       if (user) {
         alert('login sucessful');
         this.LoginForm.reset();
+        this.usersuccess=true;
+        sessionStorage.setItem("usersuccess","true")
+        this.authService.userlogin=true;
         this.route.navigate(['home']);
       }
       this.error = false;
     });
   }
- 
+
 
   ngOnInit(): void {}
 }

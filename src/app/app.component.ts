@@ -8,7 +8,14 @@ import { AuthService } from './auth.service';
 })
 export class AppComponent {
   title = 'bikeA';
-
-  constructor(public authService: AuthService) {}
+  usersuccess=false;
+  constructor(public authService: AuthService) {
+    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess" ))||this.authService.userlogin
+  }
+  logout(){
+    this.authService.userlogin=false;
+    this.usersuccess=false;
+    sessionStorage.clear();
+  }
   }
 

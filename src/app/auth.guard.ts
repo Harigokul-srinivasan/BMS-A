@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
 
   }
   canActivate(){
-    if(this.authService.isUserLoggedIn){
+    if(sessionStorage.getItem("usersuccess")){
       return true;
     }else{
       window.alert('permisssion denied with-out Login');
@@ -20,15 +20,5 @@ export class AuthGuard implements CanActivate {
       return false;
     }
   }
-  // constructor(private authService: AuthService) {}
 
-  login() {
-    // perform login logic here
-    this.authService.login();
-  }
-
-  logout() {
-    // perform logout logic here
-    this.authService.logout();
-  }
 }
