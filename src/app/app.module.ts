@@ -20,6 +20,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UserGuard } from './guards/user.guard';
       ExplorerComponent,
       ImagesliderComponent,
       RegistrationComponent,
-      ContactpageComponent
+      ContactpageComponent,
+      CheckoutComponent
    ],
   imports: [
     BrowserModule,

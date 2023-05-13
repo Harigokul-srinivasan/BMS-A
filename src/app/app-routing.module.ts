@@ -11,6 +11,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,7 @@ const routes: Routes = [
 },
   {path:"product", component:ProductComponent},
   {path:"product/:check", component:ExplorerComponent,
-   canActivate:[AuthGuard], canActivateChild: [UserGuard],
+
   //  children:[
   //   { path: 'button',}]
 },
@@ -28,7 +29,9 @@ const routes: Routes = [
   {path:"Accessories",component:AccessoriesComponent},
   {path:"Explorer",component:ExplorerComponent},
   {path:"Register",component:RegistrationComponent},
-  {path:"Contact",component:ContactpageComponent}
+  {path:"Contact",component:ContactpageComponent},
+  {path:"Checkout",component:CheckoutComponent, canActivate:[AuthGuard], canActivateChild: [UserGuard],}
+
 ];
 
 @NgModule({
