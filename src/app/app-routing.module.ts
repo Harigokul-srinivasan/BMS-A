@@ -29,8 +29,8 @@ const routes: Routes = [
   {path:"Accessories",component:AccessoriesComponent},
   {path:"Explorer",component:ExplorerComponent},
   {path:"Register",component:RegistrationComponent},
-  {path:"Contact",component:ContactpageComponent ,canActivate:[AuthGuard], canActivateChild: [UserGuard],},
-  {path:"Checkout/:check",component:CheckoutComponent,}
+  {path:"Contact",component:ContactpageComponent ,},
+  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard], canActivateChild: [UserGuard],}
   //
 
 ];

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +15,17 @@ export class AuthService {
     get isUserRole(){
       return false;
     }
-    // loggedIn(){
-    //   return !!localStorage.getItem('token')
-    // }
-    // logoutUser(){
-    //   localStorage.removeItem('token')
-    //   this._router.navigate(['home'])
-    // }
+
+     isLoggedIn = false;
+
+  login() {
+    if(LoginComponent )
+    this.isLoggedIn = true;
+  }
+
+  logout() {
+    if(LoginComponent)
+    this.isLoggedIn = false;
+  }
 }
+
