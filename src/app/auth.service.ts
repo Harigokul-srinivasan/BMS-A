@@ -19,7 +19,7 @@ export class AuthService {
      isLoggedIn = false;
 
   login() {
-    if(LoginComponent )
+    if(LoginComponent)
     this.isLoggedIn = true;
   }
 
