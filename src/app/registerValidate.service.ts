@@ -6,7 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RegisterValidateService {
-   private url="http://localhost:3000/users";
+  id: any;
+  forEach(arg0: (element: any) => void) {
+    throw new Error('Method not implemented.');
+  }
+   private url='http://localhost:3000/users';
   constructor(private client:HttpClient) { }
   addUserInfo(data:any){
     return this.client.post("http://localhost:3000/users",data);

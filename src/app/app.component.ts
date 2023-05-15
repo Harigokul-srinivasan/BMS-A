@@ -7,11 +7,8 @@ import { HttpClient } from '@angular/common/http';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  template:`
-<ng-container *ngIf="user">
-      <p>Name: {{ detail.firstname }}</p>
-    </ng-container>
-  `
+  // template:`
+
 })
 export class AppComponent {
   title = 'bikeA';
@@ -24,15 +21,16 @@ export class AppComponent {
     this.usersuccess=false;
     sessionStorage.clear();
   }
-  detail:any;
+  data:any;
   ngOnInit(){
      this.fetchdata();
   }
-  fetchdata(){
-    this.service.getusername().subscribe(res =>{
-      this.detail=res;
-  }
-    );
+  
+  fetchdata(): void {
+    this.service.getusername()
+      .subscribe(response => {
+        this.data = response.filter((users: { id: number; }) => users.id === 1); // Filter the data based on a specific condition
+      });
   }
   }
 

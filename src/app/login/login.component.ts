@@ -5,6 +5,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { RegisterValidateService } from '../registerValidate.service';
 
 @Component({
   selector: 'app-login',
@@ -13,12 +14,18 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
   usersuccess=false;
+  users: any;
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,
     private route: Router,
-    private authService: AuthService
-  ) {}
+    private authService: AuthService,
+    private service:RegisterValidateService
+  ) {
+  //   this.http.get("http://localhost:3000/users").subscribe((data:any)=>{
+  //   this.users=data;
+  // })
+  }
   LoginForm = this.fb.group({
     username: [, Validators.required],
     emailvalue: [, Validators.required],
@@ -40,8 +47,12 @@ export class LoginComponent implements OnInit {
     alert("submitted")
     this.user()
   }
+
+  userId:any;
+
   user() {
-    this.http.get<any>(' http://localhost:3000/users').subscribe((value) => {
+    this.http.get<any>('http://localhost:3000/users').subscribe((value) => {
+
       const user = value.find(
         (u: any) =>
           u.email === this.LoginForm.value.emailvalue &&
@@ -59,7 +70,5 @@ export class LoginComponent implements OnInit {
       this.error = false;
     });
   }
-
-
   ngOnInit(): void {}
 }

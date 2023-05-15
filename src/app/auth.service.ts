@@ -6,6 +6,9 @@ import { LoginComponent } from './login/login.component';
   providedIn: 'root'
 })
 export class AuthService {
+  forEach(arg0: (element: any) => void) {
+    throw new Error('Method not implemented.');
+  }
   userlogin=false;
   isUserLogIn=Boolean(sessionStorage.getItem("usersuccess"));
   constructor() {}

@@ -21,7 +21,11 @@
       routerLinkActive="active">LOGIN</a></li>
 
     <li><a style="cursor: pointer;" (click)="logout()" *ngIf="usersuccess">LOG OUT</a></li>
-    <li><a style="text-transform: uppercase;">{{detail.firstname}}</a></li>
+    <li>
+      <div *ngIf="data" >
+        <a  style="text-transform: uppercase;"*ngIf="usersuccess" >{{data[0].firstname}}</a>
+      </div>
+    </li>
   </ul>
 </nav>
 
