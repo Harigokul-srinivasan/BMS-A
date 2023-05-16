@@ -6,19 +6,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RegisterValidateService {
-  id: any;
-  forEach(arg0: (element: any) => void) {
-    throw new Error('Method not implemented.');
-  }
-   private url='http://localhost:3000/users';
   constructor(private client:HttpClient) { }
   addUserInfo(data:any){
     return this.client.post("http://localhost:3000/users",data);
   }
-  getusername(): Observable<any>{
-    return this.client.get<any>(this.url);
-  }
+  // getusername(): Observable<any>{
+  //   return this.client.get<any>(this.url);
+  // }
   getData(): Observable <any>{
     return this.client.get("http://localhost:3000/users");
    }
+
+   updateUserInfo(data:any,id:any){
+    return this.client.patch(`http://localhost:3000/users/${id}`,data);
+  }
 }
+

@@ -13,9 +13,6 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  },
   "users": [
     {
       "firstname": "Hari",
@@ -40,6 +37,14 @@
       "password": "Padma@123",
       "confirm": "Padma@123",
       "id": 3
+    },
+    {
+      "firstname": "naruto",
+      "Phoneno": "9597374379",
+      "email": "naruto123@gmail.com",
+      "password": "Naruto@123",
+      "confirm": "Naruto@123",
+      "id": 4
     }
   ],
   "product": [
@@ -100,7 +105,6 @@
       "Image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPr84nPrFUe9XptW2Yva_pt5OU0vBbRDpPg&usqp=CAU",
       "Image4": "https://autocdn.co.uk/cdn-cgi/imagedelivery/JC4X6oe6GKVO4ZI4xd1Czg/0adc1e52-40f8-41a8-de58-94cf13f11500/mediumnew",
       "id": "1"
-
     },
     {
       "ProductName": "FAT BOY",
@@ -165,8 +169,7 @@
       "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
       "Image2": "https://c4.wallpaperflare.com/wallpaper/812/904/878/black-harley-davidson-iron-883-bike-year-2016-wallpaper-preview.jpg",
       "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
-      "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg"
-      ,
+      "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg",
       "id": "7"
     },
     {
