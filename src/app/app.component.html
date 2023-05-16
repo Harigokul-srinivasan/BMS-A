@@ -17,15 +17,12 @@
     <li><a routerLink="Appearal" routerLinkActive="active">APPAREL</a></li>
     <li><a routerLink="Accessories" routerLinkActive="active">ACCESSORIES</a></li>
     <li><a routerLink="Contact" routerLinkActive="active">CONTACT US</a></li>
+    <li><a style="text-transform: uppercase;" >  {{firstname}}</a></li>
     <li><a routerLink="login" (click)="authService.login()" *ngIf="!usersuccess"
       routerLinkActive="active">LOGIN</a></li>
+    <li><a style="cursor: pointer; color: orangered;" (click)="logout()" *ngIf="usersuccess" >LOG OUT</a></li>
 
-    <li><a style="cursor: pointer;" (click)="logout()" *ngIf="usersuccess">LOG OUT</a></li>
-    <li>
-      <div *ngIf="data" >
-        <a  style="text-transform: uppercase;"*ngIf="usersuccess" >{{data[0].firstname}}</a>
-      </div>
-    </li>
+
   </ul>
 </nav>
 

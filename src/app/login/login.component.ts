@@ -35,7 +35,9 @@ export class LoginComponent implements OnInit {
   });
   error: boolean = false;
 
-  loginform() {
+  loginform(email:any) {
+    console.log(email);
+    sessionStorage.setItem('email', email);
     this.user();
     // this.admin();
     if (this.error) {

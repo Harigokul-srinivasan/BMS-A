@@ -18,4 +18,7 @@ export class RegisterValidateService {
   getusername(): Observable<any>{
     return this.client.get<any>(this.url);
   }
+  getData(): Observable <any>{
+    return this.client.get("http://localhost:3000/users");
+   }
 }
