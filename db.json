@@ -202,5 +202,21 @@
       "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg",
       "id": "9"
     }
-  ]
+  ],
+  "Appereal" : [
+    {
+    "MainImage": " https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "260 USD "
+  },{
+    "MainImage": " https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "320 USD "
+  },{
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "372 USD "
+  }
+
+]
 }
