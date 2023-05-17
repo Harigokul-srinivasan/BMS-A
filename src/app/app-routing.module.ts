@@ -31,7 +31,6 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   { path: 'paymentpage', component: PaymentpageComponent },
-  //
 ];
 
 @NgModule({
