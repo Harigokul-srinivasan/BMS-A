@@ -45,6 +45,14 @@
       "password": "Naruto@123",
       "confirm": "Naruto@123",
       "id": 4
+    },
+    {
+      "firstname": "Poornima",
+      "Phoneno": "8220446508",
+      "email": "poornima@gmail.com",
+      "password": "Poorni@2001",
+      "confirm": "Poorni@2001",
+      "id": 5
     }
   ],
   "product": [

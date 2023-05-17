@@ -21,9 +21,6 @@ const routes: Routes = [
 },
   {path:"product", component:ProductComponent},
   {path:"product/:check", component:ExplorerComponent,
-
-  //  children:[
-  //   { path: 'button',}]
 },
   {path:"login",component:LoginComponent},
   {path:"forgetpassword",component:ForgetpasswordComponent},

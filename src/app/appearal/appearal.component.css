@@ -43,6 +43,19 @@
   height: auto;
   margin-bottom: 10px;
 }
+.card button{
+  padding: 1rem 10rem;
+  background-color: #f74e05;
+  border-color: white;
+  border-radius: 5%;
+}
+.card button a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #eeecec;
+  font-weight: bolder;
+
+}
 
 @media screen and (max-width: 767px) {
   .card {
