@@ -14,29 +14,28 @@ import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 
-
-
 const routes: Routes = [
-  {path:"home",component:HomeComponent
-},
-  {path:"product", component:ProductComponent},
-  {path:"product/:check", component:ExplorerComponent,
-},
-  {path:"login",component:LoginComponent},
-  {path:"forgetpassword",component:ForgetpasswordComponent},
-  {path:"Appearal",component:AppearalComponent},
-  {path:"Accessories",component:AccessoriesComponent},
-  {path:"Explorer",component:ExplorerComponent},
-  {path:"Register",component:RegistrationComponent},
-  {path:"Contact",component:ContactpageComponent ,},
-  {path:"Checkout/:check",component:CheckoutComponent,canActivate:[AuthGuard]},
-  {path:"paymentpage",component:PaymentpageComponent},
+  { path: 'home', component: HomeComponent },
+  { path: 'product', component: ProductComponent },
+  { path: 'product/:check', component: ExplorerComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'forgetpassword', component: ForgetpasswordComponent },
+  { path: 'Appearal', component: AppearalComponent },
+  { path: 'Accessories', component: AccessoriesComponent },
+  { path: 'Explorer', component: ExplorerComponent },
+  { path: 'Register', component: RegistrationComponent },
+  { path: 'Contact', component: ContactpageComponent },
+  {
+    path: 'Checkout/:check',
+    component: CheckoutComponent,
+    canActivate: [AuthGuard],
+  },
+  { path: 'paymentpage', component: PaymentpageComponent },
   //
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
