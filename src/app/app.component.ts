@@ -40,12 +40,5 @@ export class AppComponent {
      this.firstname=this.registerdetail[this.id].firstname;
     })
   }
-
-  // fetchdata(): void {
-  //   this.service.getusername()
-  //     .subscribe(response => {
-  //       this.data = response.filter((users: { id: number; }) => users.id === 1); // Filter the data based on a specific condition
-  //     });
-  // }
   }
 

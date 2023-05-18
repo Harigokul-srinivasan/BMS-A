@@ -14,4 +14,7 @@ constructor(private http:HttpClient) { }
     getProductsDescription(){
       return this.http.get('http://localhost:3000/productDescription');
     }
+    getAppereal(){
+      return this.http.get('http://localhost:3000/Appereal');
+    }
 }
