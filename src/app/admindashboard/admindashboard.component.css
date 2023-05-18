@@ -28,7 +28,15 @@
   text-decoration: none;
   width: 100%;
 }
-
+.sidebar button  span{
+  color: #fcfafa;
+  text-decoration: none;
+  width: 100%;
+}
+.orange{
+  background-color: orangered;
+  border-bottom: 2px solid #f74e05 ;
+}
 .content {
   flex: 1;
   padding: 20px;
