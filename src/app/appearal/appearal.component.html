@@ -1,3 +1,4 @@
+<app-header-footer></app-header-footer>
 <div class="product-cards">
   <div class="card" *ngFor="let item of sample">
     <input type="radio" name="product" id="product1" checked />
@@ -8,10 +9,10 @@
       />
       <h3>{{item.ProductName}}</h3>
       <p>Description of Product 1</p><br>
-      <h3>Price{{item.Price}}</h3>
+      <h3>Price: {{item.Price}}</h3>
       <input type="checkbox" />For Men <input type="checkbox" />For Women <br>
       <button><a routerLink="/Checkout/:check"><i class="fa-solid fa-1.5x fa-cart-shopping"></i>Buy Now</a></button>
     </label>
   </div>
 </div>
-<router-outlet></router-outlet>
+<app-footer></app-footer>
