@@ -22,9 +22,11 @@ import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { HeaderFooterComponent } from './header-footer/header-footer.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -38,7 +40,9 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
       RegistrationComponent,
       ContactpageComponent,
       CheckoutComponent,
-      PaymentpageComponent
+      PaymentpageComponent,
+      AdmindashboardComponent,
+      HeaderFooterComponent
    ],
   imports: [
     BrowserModule,

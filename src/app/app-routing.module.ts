@@ -13,6 +13,7 @@ import { AuthGuard } from './auth.guard';
 import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   { path: 'paymentpage', component: PaymentpageComponent },
+  { path: 'admindashboard', component: AdmindashboardComponent },
 ];
 
 @NgModule({
