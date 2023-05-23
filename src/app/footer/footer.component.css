@@ -84,3 +84,48 @@
   .abt p{
   color: #fff;
   }
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .com,
+  .info {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .com ul li,
+  .info h1 {
+    margin-bottom: 10px;
+  }
+
+  .sociallogos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sociallogos .logobox a {
+    padding: 0 8px;
+  }
+}
+
+/* Additional responsive styles for even smaller screens */
+@media (max-width: 576px) {
+  .main-footer {
+    padding: 40px 0;
+  }
+
+  .main-footer h1,
+  .main-footer h2,
+  .main-footer ul li a,
+  footer {
+    font-size: 14px;
+  }
+
+  .logoinfo p {
+    font-size: 14px;
+  }
+}
