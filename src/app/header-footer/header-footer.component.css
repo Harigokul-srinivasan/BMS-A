@@ -114,4 +114,47 @@ nav ul li:hover .hide {
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .title h1 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .searchTerm {
+    width: 100%;
+  }
+
+  .searchButton {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .wrap {
+    position: static;
+    width: 100%;
+    left: 0;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  nav {
+    top: 0;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  .hide {
+    position: static;
+    display: none;
+  }
+}
 
