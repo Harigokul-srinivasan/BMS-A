@@ -14,6 +14,8 @@ import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { AdmindashboardoComponent } from './admindashboardo/admindashboardo.component';
+import { AdmindashboardsComponent } from './admindashboards/admindashboards.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,6 +35,8 @@ const routes: Routes = [
   },
   { path: 'paymentpage', component: PaymentpageComponent },
   { path: 'admindashboard', component: AdmindashboardComponent },
+  { path: 'admindashboardo', component: AdmindashboardoComponent },
+  { path: 'admindashboards', component: AdmindashboardsComponent },
 ];
 
 @NgModule({

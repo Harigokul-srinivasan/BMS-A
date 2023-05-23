@@ -25,9 +25,11 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { HeaderFooterComponent } from './header-footer/header-footer.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdmindashboardoComponent } from './admindashboardo/admindashboardo.component';
+import { AdmindashboardsComponent } from './admindashboards/admindashboards.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [					
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -44,7 +46,9 @@ import { FooterComponent } from './footer/footer.component';
       PaymentpageComponent,
       AdmindashboardComponent,
       HeaderFooterComponent,
-      FooterComponent
+      FooterComponent,
+      AdmindashboardoComponent,
+      AdmindashboardsComponent
    ],
   imports: [
     BrowserModule,
