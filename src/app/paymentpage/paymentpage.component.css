@@ -42,3 +42,19 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .payment-option {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .payment-options {
+    flex-wrap: wrap;
+  }
+
+  .payment-option {
+    margin: 10px;
+  }
+}
