@@ -148,3 +148,40 @@
     cursor: pointer;
     color: #27AE60;
   }
+  @media screen and (max-width: 1200px) {
+    .container {
+      margin: 80px auto;
+    }
+
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      margin: 60px auto;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .card-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      margin: 40px auto;
+    }
+
+    .grid {
+      grid-gap: 20px;
+    }
+
+    .card-container {
+      height: auto;
+    }
+  }
