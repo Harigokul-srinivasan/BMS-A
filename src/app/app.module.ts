@@ -27,9 +27,10 @@ import { HeaderFooterComponent } from './header-footer/header-footer.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdmindashboardoComponent } from './admindashboardo/admindashboardo.component';
 import { AdmindashboardsComponent } from './admindashboards/admindashboards.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -48,7 +49,8 @@ import { AdmindashboardsComponent } from './admindashboards/admindashboards.comp
       HeaderFooterComponent,
       FooterComponent,
       AdmindashboardoComponent,
-      AdmindashboardsComponent
+      AdmindashboardsComponent,
+      CartComponent
    ],
   imports: [
     BrowserModule,

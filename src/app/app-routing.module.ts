@@ -16,6 +16,7 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdmindashboardoComponent } from './admindashboardo/admindashboardo.component';
 import { AdmindashboardsComponent } from './admindashboards/admindashboards.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'admindashboard', component: AdmindashboardComponent },
   { path: 'admindashboardo', component: AdmindashboardoComponent },
   { path: 'admindashboards', component: AdmindashboardsComponent },
+  { path: 'cart', component: CartComponent },
 ];
 
 @NgModule({
