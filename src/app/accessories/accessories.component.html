@@ -1,13 +1,13 @@
 <app-header-footer></app-header-footer>
-
-<div class="item" *ngFor="let item of sample">
+<div class="cards">
+  <div class="card" *ngFor="let item of sample">
   <figure class="image-info">
     <img src="{{ item.MainImage }}" />
   </figure>
   <div class="item-info">
     <p class="description">{{ item.ProductName }}</p>
 
-    <p class="price">{{ item.Price }}</p>
+    <p class="price">Rs : {{ item.Price }} </p>
     <div class="choices">
       <label for="color-select">Color:</label>
       <select name="color" id="color-select">
@@ -30,5 +30,5 @@
   </div>
   <button type="button" (click)="addtocart(item)">Add to Cart</button>
 </div>
-
+</div>
 <app-footer></app-footer>

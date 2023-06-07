@@ -11,9 +11,7 @@
           <th>DELETE</th>
           <th>PRODUCT IMAGE</th>
           <th>PRODUCT NAME</th>
-          <th>PRODUCT DESCRIPTION</th>
           <th>PRICE</th>
-          <th>QUANTITY</th>
           <th>TOTAL</th>
 
         </tr>
@@ -25,8 +23,8 @@
           <td><img style="width:100px;height:100px" src="{{item.MainImage}}"></td>
           <td>{{item.ProductName}}</td>
           <td>{{item.gender}}</td>
-          <td>{{item.Price| currency:'INR':'': '1.0-0'}}</td>
-          <td><i class="fa-solid fa-circle-left" (click)="decrease()"></i>{{item.quantity}}<i class="fa-solid fa-circle-right" (click)="increase()"></i></td>
+          <td>{{item.Price| currency:'INR':'': '1.0-0'}} Rs</td>
+          <!-- <td><i class="fa-solid fa-circle-left" (click)="decrease()"></i>{{item.quantity}}<i class="fa-solid fa-circle-right" (click)="increase()"></i></td> -->
           <td>{{item.total| currency:'INR':'': '1.0-0'}}</td>
 
         </tr>

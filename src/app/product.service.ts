@@ -17,4 +17,7 @@ constructor(private http:HttpClient) { }
     getAppereal(){
       return this.http.get('http://localhost:3000/Appereal');
     }
+    getAccessories(){
+      return this.http.get('http://localhost:3000/Accessories');
+    }
 }

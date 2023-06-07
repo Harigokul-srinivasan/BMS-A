@@ -23,48 +23,50 @@ export class AccessoriesComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,private http:HttpClient, private service:HomeServService, public services:ProductService,public cart:CartService,
-  ) {
+  ) {}
 
-  }
   sample:any=""
-  ngOnInit():void{
-    this.http.get<any>("http://localhost:3000/"+this.service.Store).subscribe(data=>{
+  ngOnInit() {
+    this.http.get('http://localhost:3000/Accessories').subscribe(data=>{
       this.sample=data;
     })
+  // }
+  // ngOnInit():void{
     this.http.get<any>("http://localhost:3000/"+this.service.Store).subscribe(data=>
-    {
-      this.weddings=data;
-      this.weddings.forEach((a:any)=>{
-        Object.assign(a,{quantity:1,total:a.price})
-    });
-  });
-  }
-
-  Search(){
-    if(this.title==""){
-      this.ngOnInit();
-    }
-    else{
-      this.weddings=this.weddings.filter((result: { title: string; }) =>{
-        return result.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
+      {
+        this.weddings=data;
+        this.weddings.forEach((a:any)=>{
+          Object.assign(a,{quantity:1,total:a.Price})
       });
+    });
     }
-  }
-  loadData(){
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  //on page change
-  onPageChange(page: number): void {
-    this.currentPage = page;
-    this.loadData();
+
+    Search(){
+      if(this.title==""){
+        this.ngOnInit();
+      }
+      else{
+        this.weddings=this.weddings.filter((result: { title: string; }) =>{
+          return result.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
+        });
+      }
+    }
+    loadData(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    //on page change
+    onPageChange(page: number): void {
+      this.currentPage = page;
+      this.loadData();
+    }
+
+    //add to cart
+
+    addtocart(item:any){
+    this.cart.addtocart(item);
+    console.log(item)
+    }
+
+
   }
 
-  //add to cart
-
-  addtocart(items:any){
-  this.cart.addtocart(items);
-  console.log(items)
-  }
-
-
-}

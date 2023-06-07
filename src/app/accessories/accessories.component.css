@@ -28,55 +28,57 @@ img {
 	width: 65%;
 }
 
-.items {
+.cards {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 50px 50px;
 	margin-top: 10%;
 }
 
-.item {
+.card {
 	box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 	height: 100%;
 	font-size: 1.1rem;
+  width: 800px;
+  margin-left: 22%;
 }
 
-.item h3 {
+.card h3 {
 	font-size: 1.2rem;
 	line-height: 1.2rem;
 	text-align: center;
 }
 
-.item .price {
+.card .price {
 	font-size: 1.6rem;
 	margin: 0;
   font-weight: bolder;
 }
 
-.item .description {
+.card .description {
 	text-align: justify;
 }
-.item .special {
+.card .special {
 	color: #d32f2f;
 	font-weight: bolder;
 }
 
-.item .choices {
+.card .choices {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 1rem 0;
 	width: 100%;
 }
 
-.item label {
+.card label {
 	width: 100%;
 	margin: 0;
 }
 
-.item select {
+.card select {
 	outline: 0;
 	height: 30px;
 	background: #fff;
@@ -92,16 +94,16 @@ img {
 	font-size: 1rem;
 }
 
-.item select option {
+.card select option {
 	border: 1px solid #000;
 	background: #fff;
 	color: #000;
 	font-size: 1rem;
 }
-.item select option:disabled {
+.card select option:disabled {
 	color: grey;
 }
-.item button {
+.card button {
 	border: none;
 	outline: 0;
 	padding: 12px;
@@ -114,6 +116,6 @@ img {
 	margin: 1rem 0;
 }
 
-.item button:hover {
+.card button:hover {
 	opacity: 0.7;
 }

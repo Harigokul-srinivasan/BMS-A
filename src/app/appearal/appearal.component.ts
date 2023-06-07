@@ -21,9 +21,7 @@ export class AppearalComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,private http:HttpClient, private service:HomeServService, public services:ProductService,public cart:CartService,
-  ) {
-
-  }
+  ) {}
 
   sample:any=""
   ngOnInit() {
