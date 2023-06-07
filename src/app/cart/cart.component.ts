@@ -28,13 +28,30 @@ emptycart(){
 removeone(item:any){
   this.cart.removeoneitem(item);
 }
-//increase
-increase() {
-  this.cart.updateCartItems(this.total+1);
+increase(item: any) {
+  item.quantity++;
+  item.total = item.Price * item.quantity;
+  this.calculateGrandTotal();
 }
 
-decrease() {
-  this.cart.updateCartItems(this.total-1);
+decrease(item: any) {
+  if (item.quantity > 1) {
+    item.quantity--;
+    item.total = item.Price * item.quantity;
+    this.calculateGrandTotal();
+  }
+}
+
+updateQuantity(item: any) {
+  if (item.quantity < 1) {
+    item.quantity = 1;
+  }
+  item.total = item.Price * item.quantity;
+  this.calculateGrandTotal();
+}
+
+calculateGrandTotal() {
+  this.grandtotal = this.products.reduce((total, item) => total + item.total, 0);
 }
 }
 

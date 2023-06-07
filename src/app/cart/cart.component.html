@@ -1,57 +1,60 @@
-<!-- when cart contains item -->
-<ng-container *ngIf="products.length!=0">
-  <DIV CLASS="top"></DIV>
+<!-- when cart contains items -->
+<ng-container *ngIf="products.length !== 0">
+  <div class="top"></div>
   <div class="container">
-<div class="card-table">
-  <div class="cart-product">
-    <table class="table responsive">
-      <thead>
-        <tr>
-          <th>S.NO</th>
-          <th>DELETE</th>
-          <th>PRODUCT IMAGE</th>
-          <th>PRODUCT NAME</th>
-          <th>PRICE</th>
-          <th>TOTAL</th>
-
-        </tr>
-      </thead>
-      <tbody *ngFor="let item of products; let i = index">
-        <tr class="cartitems">
-          <td>{{i+1}}</td>
-          <td><i class="fa-sharp fa-solid fa-trash" (click)="removeone(item)"></i></td>
-          <td><img style="width:100px;height:100px" src="{{item.MainImage}}"></td>
-          <td>{{item.ProductName}}</td>
-          <td>{{item.gender}}</td>
-          <td>{{item.Price| currency:'INR':'': '1.0-0'}} Rs</td>
-          <!-- <td><i class="fa-solid fa-circle-left" (click)="decrease()"></i>{{item.quantity}}<i class="fa-solid fa-circle-right" (click)="increase()"></i></td> -->
-          <td>{{item.total| currency:'INR':'': '1.0-0'}}</td>
-
-        </tr>
-
-      </tbody>
-    </table>
-    <td class="emptyCart"></td>
-        <td><button (click)="emptycart()" class="emptycart"> Empty Cart</button></td>
-        <td><button class="Checkout"> Check Out</button></td>
-        <td><strong>Grand Total: {{grandtotal| currency:'INR':'symbol': '1.0-0'}}</strong></td>
-  </div></div>
-</div>
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table responsive">
+          <thead>
+            <tr>
+              <th>S.NO</th>
+              <th>DELETE</th>
+              <th>PRODUCT IMAGE</th>
+              <th>PRODUCT NAME</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>TOTAL</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let item of products; let i = index">
+            <tr class="cartitems">
+              <td>{{ i + 1 }}</td>
+              <td><i class="fa-sharp fa-solid fa-trash" (click)="removeone(item)"></i></td>
+              <td><img style="width:100px;height:100px" [src]="item.MainImage"></td>
+              <td>{{ item.ProductName }}</td>
+              <td>{{ item.Price | currency:'INR':'': '1.0-0' }}</td>
+              <td>
+                <i class="fa-solid fa-circle-left" (click)="decrease(item)"></i>
+                {{ item.quantity }}
+                <i class="fa-solid fa-circle-right" (click)="increase(item)"></i>
+              </td>
+              <td>{{ item.total | currency:'INR':'': '1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="emptyCart"></div>
+        <div>
+          <button (click)="emptycart()" class="emptycart">Empty Cart</button>
+          <button class="Checkout">Check Out</button>
+          <strong>Grand Total: {{ grandtotal | currency:'INR':'symbol': '1.0-0' }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
 </ng-container>
 
-
 <!-- when cart is empty -->
-<ng-container *ngIf="products.length==0">
-<div class="top"></div>
-<div class="container">
-  <div class="card">
-    <h5 class="card-title">My Cart</h5>
+<ng-container *ngIf="products.length === 0">
+  <div class="top"></div>
+  <div class="container">
+    <div class="card">
+      <h5 class="card-title">My Cart</h5>
+    </div>
+    <div class="center">
+      <img src="../assets/images/emptycart1.png"><br><br>
+      <h4>Your Cart is Empty!</h4>
+      <h6>Add Items to it Now</h6>
+      <button class="shop-now">Shop Now</button>
+    </div>
   </div>
-  <div class="center">
-    <img src="../assets/images/emptycart1.png"><br><br>
-    <h4>Your Cart is Empty !</h4>
-    <h6>Add Items to it Now</h6>
-    <button class="shop-now">Shop Now</button>
-  </div>
-</div>
 </ng-container>
