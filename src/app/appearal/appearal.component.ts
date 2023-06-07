@@ -36,7 +36,7 @@ export class AppearalComponent implements OnInit {
       {
         this.weddings=data;
         this.weddings.forEach((a:any)=>{
-          Object.assign(a,{quantity:1,total:a.price})
+          Object.assign(a,{quantity:1,total:a.Price})
       });
     });
     }
@@ -62,9 +62,9 @@ export class AppearalComponent implements OnInit {
 
     //add to cart
 
-    addtocart(items:any){
-    this.cart.addtocart(items);
-    console.log(items)
+    addtocart(item:any){
+    this.cart.addtocart(item);
+    console.log(item)
     }
 
 

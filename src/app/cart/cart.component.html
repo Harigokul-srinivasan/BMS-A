@@ -22,10 +22,10 @@
         <tr class="cartitems">
           <td>{{i+1}}</td>
           <td><i class="fa-sharp fa-solid fa-trash" (click)="removeone(item)"></i></td>
-          <td><img style="width:100px;height:100px" src="{{item.image}}"></td>
-          <td>{{item.title}}</td>
-          <td>{{item.titleDescription}}</td>
-          <td>{{item.price| currency:'INR':'': '1.0-0'}}</td>
+          <td><img style="width:100px;height:100px" src="{{item.MainImage}}"></td>
+          <td>{{item.ProductName}}</td>
+          <td>{{item.gender}}</td>
+          <td>{{item.Price| currency:'INR':'': '1.0-0'}}</td>
           <td><i class="fa-solid fa-circle-left" (click)="decrease()"></i>{{item.quantity}}<i class="fa-solid fa-circle-right" (click)="increase()"></i></td>
           <td>{{item.total| currency:'INR':'': '1.0-0'}}</td>
 

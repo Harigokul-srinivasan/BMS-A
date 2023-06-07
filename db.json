@@ -208,27 +208,48 @@
     "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
     "ProductName": " Product 1",
     "Price": "260 USD ",
-    "gender":"women"
+    "gender":"women",
+    "id":"1"
   },
   {
     "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
     "ProductName": " Product 1",
-    "Price": "320 USD ",
-    "gender":"women"
+    "Price": 320 ,
+    "gender":"women",
+    "id" :"2"
   },
   {
     "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
     "ProductName": " Product 1",
-    "Price": "372 USD ",
-    "gender":"women"
-  } 
+    "Price": 372 ,
+    "gender":"women",
+    "id" :"3"
+  }
 ],
 "ApperealMen":[
   {
     "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/mens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700",
     "ProductName": " Product 1",
-    "Price": "372 USD ",
-    "gender":"men"
+    "Price": 372  ,
+    "gender":"men",
+    "id" :"1"
+  }
+],
+"Accessories":[
+  {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/parts/batch-4/90201555a/90201555A_TT.jpg?impolicy=myresize&rw=700",
+    "ProductName": "Overwatch Quick-Release Saddlebags - Durable materials for UV fade resistance,Limiter prevents contents from spilling when opened, External zipper pocket for quick access to small items,Waterproof dry bags included, Internal locking mechanism secures bag to bike and prevents unwanted removal from the vehicle",
+    "Price": 372
+  },
+  {
+    "MainImage": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51IvuVFzgAL._AC_.jpg",
+    "ProductName": "Twin Cam 20W50/Formula+ Tune Up Kit – Chrome Filter - Do it right with Genuine Motor Parts. This Tune Up Kit packs everything you need for a DIY service interval in a single box that’s easy to buy and easy to store.5 quarts Genuine H-D motorcycle oil,Chrome SuperPremium 5-micron oil filter, 2 quarts Formula+ Transmission and Primary Chaincase Lubricant, Service gasket kit, 2 spark plugs, Fits '99-'18 Twin Cam models.",
+    "Price": 120.95
+  },
+  {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/parts/batch-4/90201555a/90201555A_TT.jpg?impolicy=myresize&rw=700",
+    "ProductName": "Screamin' Eagle 135ci Stage IV Performance Crate Engine – Twin Cooled - For the rider demanding for no-compromise performance. This is the most displacement, and the most power, ever created by Harley-Davidson for a street-compliant crate performance engine. Engineered by the pros at Harley-Davidson and built from the bottom up in Milwaukee, this street-tuned 135-cubic-inch Screamin’ Eagle® Crate Engine is designed to run with a wide-open throttle at high engine speeds and provide instant passing power from cruising speed. Made for riders seeking maximum displacement, compression, and flow, it delivers 143 ft-lb of torque to the rear wheel as soon as the throttle is cranked. Stage IV equipped engine includes 135 Stage IV badging on the cylinder heads and timer cover to highlight the powerplant. This street-ready performance motor features the finest Screamin’ Eagle® components: Screamin' Eagle® Extreme CNC-ported cylinder heads, SE8-517 high-lift cam, new high-compression forged pistons, high-performance cam bearing, high-performance tappets, patent-protected 4.31 steel sleeve cylinders, new 4 5/8 flywheel, new 68mm throttle body and CNC-machined 68mm intake manifold, new 6.2 g/sec fuel injectors, and Screamin' Eagle® Pro Billet Cam Plate and Oil Pump.",
+    "Price": 7999.95
   }
 ]
 }
