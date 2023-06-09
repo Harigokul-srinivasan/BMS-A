@@ -17,6 +17,7 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { AdmindashboardoComponent } from './admindashboardo/admindashboardo.component';
 import { AdmindashboardsComponent } from './admindashboards/admindashboards.component';
 import { CartComponent } from './cart/cart.component';
+import { SubmittedPageComponent } from './submitted-page/submitted-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'admindashboardo', component: AdmindashboardoComponent },
   { path: 'admindashboards', component: AdmindashboardsComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'load', component: SubmittedPageComponent },
 ];
 
 @NgModule({
