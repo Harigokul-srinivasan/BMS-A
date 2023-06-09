@@ -30,7 +30,7 @@ import { AdmindashboardsComponent } from './admindashboards/admindashboards.comp
 import { CartComponent } from './cart/cart.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -50,7 +50,8 @@ import { CartComponent } from './cart/cart.component';
       FooterComponent,
       AdmindashboardoComponent,
       AdmindashboardsComponent,
-      CartComponent
+      CartComponent,
+      SubmittedPageComponent
    ],
   imports: [
     BrowserModule,
