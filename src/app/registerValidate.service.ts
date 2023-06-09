@@ -10,6 +10,9 @@ export class RegisterValidateService {
   addUserInfo(data:any){
     return this.client.post("http://localhost:3000/users",data);
   }
+  importlist(data:any){
+    return this.client.post(" http://localhost:3000/importlist",data);
+  }
   // getusername(): Observable<any>{
   //   return this.client.get<any>(this.url);
   // }

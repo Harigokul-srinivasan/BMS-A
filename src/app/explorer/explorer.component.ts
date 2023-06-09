@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductComponent } from '../product/product.component';
 import { ProductService } from '../product.service';
+import { FormBuilder, Validators } from '@angular/forms';
+import { RegisterValidateService } from '../registerValidate.service';
 
 @Component({
   selector: 'app-explorer',
@@ -16,7 +18,10 @@ export class ExplorerComponent implements OnInit {
 
   constructor(
     private productService: ProductService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private fb: FormBuilder,
+    private Reg: RegisterValidateService,
+
   ) {
     this.productService.getProductsDescription().subscribe((product) => {
       this.allProduct = product;
@@ -27,6 +32,36 @@ export class ExplorerComponent implements OnInit {
       });
     });
   }
+ menu_open(){
+  const model:any =document.querySelector(".modal");
+  model.showModal();
+ }
+ close_show(){
+  const modal:any = document.querySelector('.modal');
+  const closeModal:any = document.querySelector('#close_show');
+  modal.close();
+
+ }
+
+
+formsImport = this.fb.group(
+  {
+    firstname: [, [Validators.required, Validators.pattern('^[a-zA-Z]+$')]],
+    Phoneno: [, [Validators.required,Validators.pattern('^[6-9]{1}[0-9]{9}$')]],
+    // mobilenumber:[,[Validators.required,Validators.pattern("^[6-9]{1}[0-9]{9}$")]],
+    email: [,[Validators.required, Validators.pattern('^([a-zA-Z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
+
+    color:[,[Validators.required]]
+  }
+);
+
+submitForm() {
+  this.Reg.importlist(this.formsImport.value).subscribe((data) => {
+    
+
+  });
+
+}
 
   ngOnInit() {}
 }

@@ -81,7 +81,56 @@
 <h3> -------------------Harley Davidson™---------------------</h3>
 <h1>{{finalProduct.ProductName}}</h1>
 </div><div class="btn">
-<button><a routerLink="/Checkout/{{finalProduct.id}}"><i class="fa-solid fa-1.5x fa-cart-shopping"></i>Buy Now</a></button>
+<button id="menu_show" (click)="menu_open()"><a  ><i class="fa-solid fa-1.5x fa-cart-shopping"></i>Buy Now</a></button>
 </div>
 </div>
+<dialog class="modal">
+<div class="container">
+  <h2>Bike Purchase Form &nbsp; &nbsp;<i class="fa fa-times" aria-hidden="true" (click)="close_show()"></i></h2>
+  <form [formGroup]="formsImport" (ngSubmit)="submitForm()" >
+    <div class="form-group">
+      <label for="name">Name:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input type="text" id="name" name="name" formControlName="firstname">
+      <div class="errorContainer" *ngIf="formsImport.controls['firstname'].dirty">
+        <p class="error" *ngIf="formsImport.controls['firstname'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>User Name can't be blank</p>
+        <p class="error" *ngIf="formsImport.controls['firstname'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>User Name contain only alphabets</p>
+</div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input type="text" id="email" name="email" formControlName="email">
+      <div class="errorContainer" *ngIf="formsImport.controls['email'].dirty">
+        <p class="error" *ngIf="formsImport.controls['email'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
+        <p class="error" *ngIf="formsImport.controls['email'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-id</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input type="text" id="phone" name="phone" formControlName="Phoneno">
+      <div class="errorContainer" *ngIf="formsImport.controls['Phoneno'].dirty">
+        <p class="error" *ngIf="formsImport.controls['Phoneno'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Phone number can't be blank</p>
+        <p class="error" *ngIf="formsImport.controls['Phoneno'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid Phoneno</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="bike">Bike : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; {{finalProduct.ProductName}}</label>
+
+
+    </div>
+    <div class="form-group">
+      <label for="color">Bike Color:</label>&nbsp;
+      <select id="bike" name="bike" formControlName="color">
+        <option value="">Select Bike Colour</option>
+        <option value="Colour A">ROYAL RED & BLACK</option>
+        <option value="Colour B">BLACK & WHITE</option>
+        <option value="Colour C">BLUE & BLACK</option>
+      </select>
+      <div class="errorContainer" *ngIf="formsImport.controls['color'].dirty">
+        <p class="error" *ngIf="formsImport.controls['color'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Phone number can't be blank</p>
+    </div></div>
+    <div class="form-group">
+      <input type="submit" value="Submit"  [disabled]="!formsImport.valid">
+      <br><br><br>
+    </div>
+  </form> </div></dialog>
 <app-footer></app-footer>
