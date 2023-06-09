@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductComponent } from '../product/product.component';
 import { ProductService } from '../product.service';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -19,6 +19,7 @@ export class ExplorerComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,
+    private route1:Router,
     private fb: FormBuilder,
     private Reg: RegisterValidateService,
 
@@ -56,10 +57,12 @@ formsImport = this.fb.group(
 );
 
 submitForm() {
-  this.Reg.importlist(this.formsImport.value).subscribe((data) => {
-    
+    this.Reg.importlist(this.formsImport.value).subscribe((data) => {
+      alert('ho')
+      this.route1.navigate(['/load']);
+    });
 
-  });
+
 
 }
 
