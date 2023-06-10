@@ -76,6 +76,14 @@
       "email": "hy@gmail.com",
       "color": "Colour B",
       "id": 7
+    },
+    {
+      "firstname": "HariVirat",
+      "Phoneno": "9489922628",
+      "email": "ceeeharigokul23@gmail.com",
+      "password": "Haha@2229",
+      "confirm": "Haha@2229",
+      "id": 8
     }
   ],
   "product": [
@@ -132,7 +140,7 @@
       "MainImage": "https://psmfirestorm.blob.core.windows.net/crs-images/374703/original.jpg",
       "ImageWallpaper": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2023/2023-fat-bob-114/story/fat-bob-mid-tall-hero-desktop.jpg.jpg?impolicy=myresize&rw=1700",
       "Image1": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2023/2023-fat-bob-114/story/2023-fat-bob-b-roll-tall-hero-desktop.jpg",
-      "Image2": "https://cdn.autoportal.com/img/news/14332/main/39cc0f5b9ba143208c4ab34a8abbc10b/main_cropped.jpg",
+      "Image2": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_ANNIVERSARY/50/HEIRLOOM_RED_FADE/2000000003.jpg",
       "Image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPr84nPrFUe9XptW2Yva_pt5OU0vBbRDpPg&usqp=CAU",
       "Image4": "https://autocdn.co.uk/cdn-cgi/imagedelivery/JC4X6oe6GKVO4ZI4xd1Czg/0adc1e52-40f8-41a8-de58-94cf13f11500/mediumnew",
       "id": "1"

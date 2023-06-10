@@ -22,7 +22,11 @@ import { SubmittedPageComponent } from './submitted-page/submitted-page.componen
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'product/:check', component: ExplorerComponent },
+  {
+    path: 'product/:check',
+    component: ExplorerComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'login', component: LoginComponent },
   { path: 'forgetpassword', component: ForgetpasswordComponent },
   { path: 'Appearal', component: AppearalComponent },
@@ -39,7 +43,7 @@ const routes: Routes = [
   { path: 'admindashboard', component: AdmindashboardComponent },
   { path: 'admindashboardo', component: AdmindashboardoComponent },
   { path: 'admindashboards', component: AdmindashboardsComponent },
-  { path: 'cart', component: CartComponent },
+  { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
   { path: 'load', component: SubmittedPageComponent },
 ];
 
