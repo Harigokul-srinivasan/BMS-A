@@ -15,6 +15,7 @@
   color: #f74e05;
   display: flex;
   margin-right: 20%;
+  margin-left: 200px;
 }
 .title img{
   height:50px;
@@ -60,13 +61,13 @@
   color: #4e514f;
 }
 /* Resize the wrap to see the search bar change! */
-.wrap {
+/* .wrap {
   width: 30%;
   position: absolute;
   top: 50%;
   left: 80%;
   transform: translate(-80%, -50%);
-}
+} */
 
 nav {
   width: 100%;
@@ -139,13 +140,13 @@ nav ul li:hover .hide {
     margin-top: 10px;
   }
 
-  .wrap {
+  /* .wrap {
     position: static;
     width: 100%;
     left: 0;
     transform: none;
     margin-top: 10px;
-  }
+  } */
 
   nav {
     top: 0;
@@ -195,10 +196,10 @@ nav ul li:hover .hide {
     margin-right: 15%;
   }
 
-  .wrap {
+  /* .wrap {
     width: 50%;
     left: 75%;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -219,7 +220,7 @@ nav ul li:hover .hide {
     margin-right: 0;
   }
 
-  .searchTerm {
+  /* .searchTerm {
     width: 70%;
   }
 
@@ -228,11 +229,11 @@ nav ul li:hover .hide {
     height: 29px;
     font-size: 16px;
   }
-
-  .wrap {
+*/
+  /* .wrap {
     width: 80%;
     left: 50%;
-  }
+  } */
 }
 /* Responsive styles */
 
