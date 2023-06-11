@@ -1,6 +1,7 @@
 <app-header-footer></app-header-footer>
 
-  <div class="card" *ngFor="let item of sample">
+  <!-- <div class="card" *ngFor="let item of sample">
+
     <input type="radio" name="product" id="product1" checked />
     <label for="product1">
       <img
@@ -13,6 +14,19 @@
       <input type="checkbox" />For Men <input type="checkbox" />For Women <br>
       <button (click)="addtocart(item)"><i class="fa-solid fa-1.5x fa-cart-shopping"></i>Buy Now</button>
     </label>
+  </div> -->
+  <div class="product-cards grid">
+    <div class="card" *ngFor="let item of sample">
+      <input type="radio" name="product" id="product1" checked />
+      <label for="product1">
+        <img src="{{item.MainImage}}" alt="Product 1" />
+        <h3>{{item.ProductName}}</h3>
+        <h3>Price: {{item.Price}}</h3><br>
+        <button (click)="addtocart(item)">
+          <i class="fa-solid fa-1.5x fa-cart-shopping"></i>Buy Now
+        </button>
+      </label>
+    </div>
   </div>
-<!-- <a routerLink="/Checkout/:check"></a> -->
+
 <app-footer></app-footer>

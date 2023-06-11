@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { RegisterValidateService } from '../registerValidate.service';
 
@@ -10,6 +10,7 @@ import { RegisterValidateService } from '../registerValidate.service';
 export class HeaderFooterComponent {
   email:any=sessionStorage.getItem('email');
   usersuccess=false;
+  @Input() cartDataCount:any;
   constructor(public authService: AuthService, private service: RegisterValidateService) {
     this.usersuccess=Boolean(sessionStorage.getItem("usersuccess" ))||this.authService.userlogin
     this.ngOnInit();

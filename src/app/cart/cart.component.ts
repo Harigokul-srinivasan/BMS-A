@@ -41,12 +41,14 @@ decrease(item: any) {
     this.calculateGrandTotal();
   }
 }
-
+hello:any;
 updateQuantity(item: any) {
   if (item.quantity < 1) {
     item.quantity = 1;
   }
   item.total = item.Price * item.quantity;
+  this.hello = item.total;
+  console.log(item.Price[2]);
   this.calculateGrandTotal();
 }
 

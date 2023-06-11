@@ -303,3 +303,31 @@ nav ul li:hover .hide {
     font-size: 8px;
   }
 }
+.cart,
+#mainPageCart {
+  margin: auto 0;
+  font-weight: 900;
+  position: relative;
+}
+
+.cart .fa-cart-shopping,
+#mainPageCart .fa-cart-shopping {
+  font-size: 1.8rem;
+}
+
+.cart::after {
+  content: attr(current-count);
+  position: absolute;
+  top: 0;
+  transform: translateY(-0.4rem);
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  color: var(--white);
+}

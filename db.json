@@ -236,22 +236,22 @@
   ],
   "Appereal": [
     {
-      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
-      "ProductName": " Product 1",
-      "Price": "260 USD ",
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97046-23vw/97046-23VW_F.jpg?impolicy=myresize&rw=700",
+      "ProductName": " Women's Classic Eagle Studded Leather Jacket",
+      "Price": 6000 ,
       "gender": "women",
       "id": "1"
     },
     {
-      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
-      "ProductName": " Product 1",
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97475-23vw/97475-23VW_B.jpg?impolicy=myresize&rw=480",
+      "ProductName": " Women's United Raglan Tee",
       "Price": 320,
       "gender": "women",
       "id": "2"
     },
     {
-      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
-      "ProductName": " Product 1",
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97507-23vw/97507-23VW_F.jpg?impolicy=myresize&rw=700 ",
+      "ProductName": " Women's Star Spangled Banner Henley Tank",
       "Price": 372,
       "gender": "women",
       "id": "3"
@@ -259,11 +259,25 @@
   ],
   "ApperealMen": [
     {
-      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/mens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700",
-      "ProductName": " Product 1",
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/96873-23vm/96873-23VM_F.jpg?impolicy=myresize&rw=700",
+      "ProductName": " Men's 120th Anniversary Shirt - Colorblocked - Cloud Dancer",
       "Price": 372,
       "gender": "men",
       "id": "1"
+    },
+    {
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97797-23vm/97797-23VM_F.jpg?impolicy=myresize&rw=700",
+      "ProductName": " Men's 120th Anniversary Bar & Shield Cap",
+      "Price": 252,
+      "gender": "men",
+      "id": "2"
+    },
+    {
+      "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97172-23vm/97172-23VM_F.jpg?impolicy=myresize&rw=700",
+      "ProductName": " Men's 120th Anniversary Imprint Riding Jacket",
+      "Price": 7500,
+      "gender": "men",
+      "id": "3"
     }
   ],
   "Accessories": [

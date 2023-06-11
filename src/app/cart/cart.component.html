@@ -12,7 +12,7 @@
               <th>PRODUCT IMAGE</th>
               <th>PRODUCT NAME</th>
               <th>PRICE</th>
-              <th>QUANTITY</th>
+              <!-- <th>QUANTITY</th> -->
               <th>TOTAL</th>
             </tr>
           </thead>
@@ -23,12 +23,12 @@
               <td><img style="width:100px;height:100px" [src]="item.MainImage"></td>
               <td>{{ item.ProductName }}</td>
               <td>{{ item.Price | currency:'INR':'': '1.0-0' }}</td>
-              <td>
+              <!-- <td>
                 <i class="fa-solid fa-circle-left" (click)="decrease(item)"></i>
                 {{ item.quantity }}
                 <i class="fa-solid fa-circle-right" (click)="increase(item)"></i>
-              </td>
-              <td>{{ item.total | currency:'INR':'': '1.0-0' }}</td>
+              </td> -->
+              <td>{{ hello }}</td>
             </tr>
           </tbody>
         </table>
@@ -36,7 +36,7 @@
         <div>
           <button (click)="emptycart()" class="emptycart">Empty Cart</button>
           <button class="Checkout">Check Out</button>
-          <strong>Grand Total: {{ grandtotal | currency:'INR':'symbol': '1.0-0' }}</strong>
+          <strong>Grand Total: {{ hello | currency:'INR':'symbol': '1.0-0' }}</strong>
         </div>
       </div>
     </div>
