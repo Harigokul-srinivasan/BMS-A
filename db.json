@@ -13,6 +13,20 @@
       "email": "harigokul476@gmail.com",
       "color": "Colour C",
       "id": 1
+    },
+    {
+      "firstname": "HariGokul",
+      "Phoneno": "9489922628",
+      "email": "harigokul@gmail.com",
+      "color": "Colour A",
+      "id": 2
+    },
+    {
+      "firstname": "sankar",
+      "Phoneno": "9489922628",
+      "email": "subramanipalanisamy777@gmail.com",
+      "color": "Colour A",
+      "id": 3
     }
   ],
   "comments": [
@@ -238,7 +252,7 @@
     {
       "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/merchandise/2023/97046-23vw/97046-23VW_F.jpg?impolicy=myresize&rw=700",
       "ProductName": " Women's Classic Eagle Studded Leather Jacket",
-      "Price": 6000 ,
+      "Price": 6000,
       "gender": "women",
       "id": "1"
     },

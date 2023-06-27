@@ -124,6 +124,8 @@
   background-color: #f74e05;
   border-color: white;
   border-radius: 5%;
+  color: white;
+  font-weight: 800;
 }
 
 .card button a {
