@@ -6,27 +6,10 @@
       "author": "typicode"
     }
   ],
-  "importlist": [
+  "admin": [
     {
-      "firstname": "Harigokul",
-      "Phoneno": "9489922628",
-      "email": "harigokul476@gmail.com",
-      "color": "Colour C",
-      "id": 1
-    },
-    {
-      "firstname": "HariGokul",
-      "Phoneno": "9489922628",
-      "email": "harigokul@gmail.com",
-      "color": "Colour A",
-      "id": 2
-    },
-    {
-      "firstname": "sankar",
-      "Phoneno": "9489922628",
-      "email": "subramanipalanisamy777@gmail.com",
-      "color": "Colour A",
-      "id": 3
+      "email": "admin123@gmail.com",
+      "pass": "Admin@2201"
     }
   ],
   "comments": [
@@ -77,6 +60,13 @@
       "email": "crazysanty2001@gmail.com",
       "color": "ROYAL RED & BLACK",
       "id": 1
+    },
+    {
+      "firstname": "HariGokul",
+      "Phoneno": "9489922628",
+      "email": "harigokul476@gmail.com",
+      "color": "BLACK & WHITE",
+      "id": 2
     }
   ],
   "product": [

@@ -13,9 +13,9 @@ export class RegisterValidateService {
   importBike(data:any){
     return this.client.post(" http://localhost:3000/importBike",data);
   }
-  // getusername(): Observable<any>{
-  //   return this.client.get<any>(this.url);
-  // }
+  getImportBike():Observable<any>{
+    return this.client.get("http://localhost:3000/importBike");
+  }
   getData(): Observable <any>{
     return this.client.get("http://localhost:3000/users");
    }

@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     console.log(email);
     sessionStorage.setItem('email', email);
     this.user();
-    // this.admin();
+    this.admin();
     if (this.error) {
       alert('error');
       this.error=false;
@@ -47,7 +47,8 @@ export class LoginComponent implements OnInit {
   }
   submit(){
     alert("submitted")
-    this.user()
+    this.user();
+    // this.admin();
   }
 
   userId:any;
@@ -72,5 +73,23 @@ export class LoginComponent implements OnInit {
       this.error = false;
     });
   }
+  admin(){
+    {
+      this.http.get<any>('http://localhost:3000/admin').subscribe((users)=>
+      {
+        const admin= users.find((a:any)=>a.email === this.LoginForm.value.emailvalue && a.pass === this.LoginForm.value.passwordvalue );
+        if(admin)
+        {
+         alert('login successfully');
+         this.LoginForm.reset();
+         this.route.navigate(['/admindashboard']);
+        }
+        else
+        {
+         this.error=true;
+        }
+      });
+     }
+    }
   ngOnInit(): void {}
 }

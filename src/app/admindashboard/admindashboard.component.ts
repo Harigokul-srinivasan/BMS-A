@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterValidateService } from '../registerValidate.service';
 
 @Component({
   selector: 'app-admindashboard',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admindashboard.component.css']
 })
 export class AdmindashboardComponent implements OnInit {
+  details: any;
 
-  constructor() { }
+  constructor( private reg:RegisterValidateService) { }
 
   ngOnInit() {
+    this.reg.getImportBike().subscribe(data=>{
+      this.details=data;
+    })
   }
 
 }

@@ -1,51 +1,29 @@
-<div class="container">
-  <div class="sidebar">
-    <ul>
-      <li>
-        <a routerLink="/admindashboards"><button>Dashboard</button></a>
-      </li>
-      <li>
-        <a routerLink="#"
-          ><button class="orange">Product Management</button>
-        </a>
-      </li>
-      <li>
-        <a routerLink="/admindashboardo"><button>Settings</button></a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <form>
-      <h4>Bike Products</h4>
-      <input type="text" id="name" name="name" required />
-      <label for="description">Product Description:</label>
-      <textarea id="description" name="description" required></textarea>
-      <label for="price">Price:</label>
-      <input type="number" id="price" name="price" required />
-      <button type="submit">Upload Product</button>
-    </form>
-  </div>
-  <div class="content">
-    <form>
-      <label for="name">Product Name:</label>
-      <input type="text" id="name" name="name" required />
-      <label for="description">Product Description:</label>
-      <textarea id="description" name="description" required></textarea>
-      <label for="price">Price:</label>
-      <input type="number" id="price" name="price" required />
-      <button type="submit">Upload Product</button>
-    </form>
-  </div>
-  <div class="content">
-    <form>
-      <label for="name">Product Name:</label>
-      <input type="text" id="name" name="name" required />
-      <label for="description">Product Description:</label>
-      <textarea id="description" name="description" required></textarea>
-      <label for="price">Price:</label>
-      <input type="number" id="price" name="price" required />
-      <button type="submit">Upload Product</button>
-    </form>
-  </div>
-</div>
+ <h1> Admin Dashboard </h1>
+  <table>
+    <thead>
+      <h2> Import  Bike  Approval   </h2>
+      <tr>
+        <th>S no</th>
+        <th>User Name</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Color</th>
+        <th>Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <!-- <th>Bank account</th> -->
+        <!-- <th>Denied</th> -->
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detail of details">
+        <td>{{detail.id}}</td>
+        <td>{{detail.firstname}}</td>
+        <td>{{detail.Phoneno}}</td>
+        <td>{{detail.email}}</td>
+        <td>{{detail.color}}</td>
+        <td> <button id="Status"  >Approve</button>/<button id="delete" >Denied</button></td>
+        <!-- <td><button ><a routerLink="/account">View</a></button></td> -->
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
