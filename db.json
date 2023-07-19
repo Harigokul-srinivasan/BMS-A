@@ -70,6 +70,15 @@
       "id": 4
     }
   ],
+  "importBike": [
+    {
+      "firstname": "Subramani",
+      "Phoneno": "8610209535",
+      "email": "crazysanty2001@gmail.com",
+      "color": "ROYAL RED & BLACK",
+      "id": 1
+    }
+  ],
   "product": [
     {
       "Price": "120000",

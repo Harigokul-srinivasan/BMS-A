@@ -57,7 +57,7 @@ formsImport = this.fb.group(
 );
 
 submitForm() {
-    this.Reg.importlist(this.formsImport.value).subscribe((data) => {
+    this.Reg.importBike(this.formsImport.value).subscribe((data) => {
       alert('ho')
       this.route1.navigate(['/load']);
     });
