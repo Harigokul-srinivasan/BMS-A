@@ -58,7 +58,7 @@
       "Phoneno": "8667200676",
       "email": "padmavathi348@gmail.com",
       "password": "Padma@123",
-      "confirm": "Padma@123",
+      "confirm": "",
       "id": 3
     },
     {
@@ -76,28 +76,6 @@
       "password": "Poorni@2001",
       "confirm": "Poorni@2001",
       "id": 5
-    },
-    {
-      "firstname": "dfghjk",
-      "Phoneno": "9874565555",
-      "email": "hy@gmail.com",
-      "color": "Colour B",
-      "id": 6
-    },
-    {
-      "firstname": "dfghjk",
-      "Phoneno": "9874565555",
-      "email": "hy@gmail.com",
-      "color": "Colour B",
-      "id": 7
-    },
-    {
-      "firstname": "HariVirat",
-      "Phoneno": "9489922628",
-      "email": "ceeeharigokul23@gmail.com",
-      "password": "Haha@2229",
-      "confirm": "Haha@2229",
-      "id": 8
     }
   ],
   "product": [
