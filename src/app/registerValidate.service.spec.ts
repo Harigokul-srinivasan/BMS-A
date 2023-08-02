@@ -1,12 +1,13 @@
 /* tslint:disable:no-unused-variable */
-
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed, async, inject } from '@angular/core/testing';
 import { RegisterValidateService } from './registerValidate.service';
 
 describe('Service: RegisterValidate', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RegisterValidateService]
+      providers: [RegisterValidateService],
+      imports:[HttpClientModule],
     });
   });
 

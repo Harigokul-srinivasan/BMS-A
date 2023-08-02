@@ -31,8 +31,7 @@
       </div>
         <div class="errorContainer" *ngIf="RegisterForms.controls['password'].dirty">
                         <p class="error" *ngIf="RegisterForms.controls['password'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>password can't be blank</p>
-                        <!-- <p class="error" *ngIf="RegisterForms.controls['password'].errors?.['minlength']"><i class="fas fa-exclamation-circle"></i>Password should contain 8 characters</p> -->
-                        <p class="error" *ngIf="RegisterForms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password like contain(A-a-1-@)</p>
+                        <p class="error" *ngIf="RegisterForms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Password Must Contains <br>1.Atleast One UpperCase <br>2.Atleast One LowerCase <br>3.Atleast One Symbol <br>4.Atleast One Number <br>5.Minimum Length should be 8 <br>6.Maximum length should be 12</p>
                       </div>
       <div class="Registerusername">
         <i class="fa fa-unlock-alt" aria-hidden="true"> </i>

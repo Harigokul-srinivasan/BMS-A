@@ -60,14 +60,7 @@
   text-decoration: none;
   color: #4e514f;
 }
-/* Resize the wrap to see the search bar change! */
-/* .wrap {
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-80%, -50%);
-} */
+
 
 nav {
   width: 100%;
@@ -140,14 +133,6 @@ nav ul li:hover .hide {
     margin-top: 10px;
   }
 
-  /* .wrap {
-    position: static;
-    width: 100%;
-    left: 0;
-    transform: none;
-    margin-top: 10px;
-  } */
-
   nav {
     top: 0;
     justify-content: space-between;
@@ -196,10 +181,7 @@ nav ul li:hover .hide {
     margin-right: 15%;
   }
 
-  /* .wrap {
-    width: 50%;
-    left: 75%;
-  } */
+
 }
 
 @media screen and (max-width: 480px) {
@@ -220,20 +202,7 @@ nav ul li:hover .hide {
     margin-right: 0;
   }
 
-  /* .searchTerm {
-    width: 70%;
-  }
-
-  .searchButton {
-    width: 30px;
-    height: 29px;
-    font-size: 16px;
-  }
-*/
-  /* .wrap {
-    width: 80%;
-    left: 50%;
-  } */
+  
 }
 /* Responsive styles */
 
