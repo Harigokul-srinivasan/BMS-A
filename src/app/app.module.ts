@@ -13,7 +13,6 @@ import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.compone
 import { AppearalComponent } from './appearal/appearal.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ExplorerComponent } from './explorer/explorer.component';
-import { ImagesliderComponent } from './imageslider/imageslider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
@@ -31,7 +30,7 @@ import { CartComponent } from './cart/cart.component';
 import { SubmittedPageComponent } from './submitted-page/submitted-page.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -41,7 +40,6 @@ import { SubmittedPageComponent } from './submitted-page/submitted-page.componen
       AppearalComponent,
       AccessoriesComponent,
       ExplorerComponent,
-      ImagesliderComponent,
       RegistrationComponent,
       ContactpageComponent,
       CheckoutComponent,
