@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ExplorerComponent } from './explorer.component';
+import { HeaderFooterComponent } from '../header-footer/header-footer.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('ExplorerComponent', () => {
   let component: ExplorerComponent;
@@ -11,7 +13,7 @@ describe('ExplorerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExplorerComponent ]
+      declarations: [ ExplorerComponent ,HeaderFooterComponent,FooterComponent]
     })
     .compileComponents();
   }));

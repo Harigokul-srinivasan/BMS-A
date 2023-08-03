@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AdmindashboardComponent } from './admindashboard.component';
+import { HeaderFooterComponent } from '../header-footer/header-footer.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('AdmindashboardComponent', () => {
   let component: AdmindashboardComponent;
@@ -11,7 +13,7 @@ describe('AdmindashboardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdmindashboardComponent ]
+      declarations: [ AdmindashboardComponent, HeaderFooterComponent,FooterComponent ]
     })
     .compileComponents();
   }));

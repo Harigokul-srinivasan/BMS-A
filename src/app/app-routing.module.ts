@@ -10,7 +10,6 @@ import { ExplorerComponent } from './explorer/explorer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 import { AuthGuard } from './auth.guard';
-import { UserGuard } from './guards/user.guard';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';

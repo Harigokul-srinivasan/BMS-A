@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AccessoriesComponent } from './accessories.component';
+import { HeaderFooterComponent } from '../header-footer/header-footer.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('AccessoriesComponent', () => {
   let component: AccessoriesComponent;
@@ -11,7 +13,7 @@ describe('AccessoriesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccessoriesComponent ]
+      declarations: [ AccessoriesComponent , HeaderFooterComponent,FooterComponent]
     })
     .compileComponents();
   }));
